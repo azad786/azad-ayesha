@@ -61,10 +61,10 @@ $(document).ready(function () {
     $("#btn_message").on("click", function (e) {
         e.preventDefault();
         if ($("#guest_name").val() === '') {
-            return alert('Nama Harus Diisi')
+            return alert('Name Must be Filled in')
         }
         if ($("#message").val() === '') {
-            return alert('Pesan Harus Diisi');
+            return alert('Message Required');
         }
         if ($("#guest_name").val() !== '' && $("#message").val() !== '') {
             $(this).html('Mengirim Pesan...');
@@ -80,7 +80,7 @@ $(document).ready(function () {
         event.preventDefault();
         var btn = $("#btn_message");
         if (true) {
-            btn.html('<small>Terima kasih atas doa dan ucapannya</small>');
+            btn.html('<small>Thank you for your prayers and words.</small>');
             setTimeout(function () {
                 btn.html('Kirim');
             }, 3000);
